@@ -14,4 +14,19 @@ const isEqual = <T, Y>(a: T, b: Y) => {
 console.log(isEqual(3, 3));
 console.log(isEqual(3, "3"));
 
+
+const makeArray = <T, Y>(a: T, b: Y, c: T) => [a, b];
+
+
+// function add<T,Y>(a: T,b: Y){}
+// 
+
+console.log(makeArray(1,3, 5));
+console.log(makeArray('1',5, '3'));
+console.log(makeArray(true,'3', true));
+
+const foo = <N, T>(mult: N, ...rest: T[]) => { }
+
+console.log(foo(5, [1,2,3]));
+
 export {};
